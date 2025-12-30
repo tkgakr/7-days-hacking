@@ -1,8 +1,7 @@
-# Nmap 7.98 scan initiated Tue Dec 30 18:07:33 2025 as: /usr/lib/nmap/nmap --privileged -sV -Pn -oN nmap.txt -v --script vuln 10.49.183.247
-Increasing send delay for 10.49.183.247 from 0 to 5 due to 12 out of 38 dropped probes since last increase.
-Nmap scan report for 10.49.183.247
+# Nmap 7.98 scan initiated Tue Dec 30 22:25:29 2025 as: /usr/lib/nmap/nmap --privileged -sV -Pn -oN nmap.txt -v --script vuln 10.49.130.18
+Nmap scan report for 10.49.130.18
 Host is up (0.15s latency).
-Not shown: 991 closed tcp ports (reset)
+Not shown: 992 closed tcp ports (reset)
 PORT      STATE SERVICE      VERSION
 135/tcp   open  msrpc        Microsoft Windows RPC
 139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
@@ -13,12 +12,11 @@ PORT      STATE SERVICE      VERSION
 49153/tcp open  msrpc        Microsoft Windows RPC
 49154/tcp open  msrpc        Microsoft Windows RPC
 49158/tcp open  msrpc        Microsoft Windows RPC
-49159/tcp open  msrpc        Microsoft Windows RPC
 Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Host script results:
-|_smb-vuln-ms10-054: false
 |_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-054: false
 | smb-vuln-ms17-010: 
 |   VULNERABLE:
 |   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
@@ -30,11 +28,11 @@ Host script results:
 |           
 |     Disclosure date: 2017-03-14
 |     References:
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
 |       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
-|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
-|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
 |_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Dec 30 18:10:06 2025 -- 1 IP address (1 host up) scanned in 153.21 seconds
+# Nmap done at Tue Dec 30 22:27:53 2025 -- 1 IP address (1 host up) scanned in 144.44 seconds
