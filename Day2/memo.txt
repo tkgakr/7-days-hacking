@@ -1,0 +1,4 @@
+[22][ssh] host: 10.48.162.11   login: jan   password: armando
+
+beeswax          (kay_id_rsa) 
+
